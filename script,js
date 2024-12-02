@@ -1,0 +1,6 @@
+document.querySelectorAll('.tabs button').forEach((tab) => {
+    tab.addEventListener('click', () => {
+      alert(`Tab clicada: ${tab.textContent}`);
+    });
+  });
+  
