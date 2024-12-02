@@ -1,84 +1,843 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .container {
-    display: flex;
-    width: 100%;
-  }
-  
-  .sidebar {
-    background-color: #00334e;
-    color: white;
-    width: 250px;
-    padding: 20px;
-  }
-  
-  .sidebar .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .sidebar nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar nav ul li {
-    margin: 20px 0;
-    cursor: pointer;
-  }
-  
-  .content {
-    flex: 1;
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  header h1 {
-    font-size: 24px;
-  }
-  
-  header .link {
-    text-decoration: none;
-    color: #0077cc;
-  }
-  
-  .files, .receitas, .info, .calendario {
-    margin-bottom: 20px;
-  }
-  
-  .files .file, .receitas .item, .info .unit {
-    background: #f1f1f1;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
-  
-  .tabs {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .tabs button {
-    padding: 10px;
-    background: #ddd;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .tabs button:hover {
-    background: #ccc;
-  }
-  
+.cadastro-child {
+  position: absolute;
+  top: 0px;
+  left: 163px;
+  border-radius: 50px;
+  background-color: #e9ca7c;
+  width: 208px;
+  height: 74px;
+}
+.cadastrar {
+  position: absolute;
+  top: 14px;
+  left: 0px;
+}
+.entrar {
+  position: absolute;
+  top: 16px;
+  left: 223px;
+}
+.cadastro {
+  position: absolute;
+  top: 35px;
+  left: 1322px;
+  width: 371px;
+  height: 74px;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.75);
+  font-family: Lato;
+}
+.image-2 {
+  position: absolute;
+  top: 20px;
+  left: 725px;
+  width: 201px;
+  height: 106px;
+}
+.image-10-icon {
+  position: absolute;
+  top: 20px;
+  left: 202px;
+  width: 256px;
+  height: 90px;
+  object-fit: cover;
+}
+.financeiro {
+  position: absolute;
+  top: 98.23%;
+  left: 1.3%;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+.financeiro2-icone {
+  position: absolute;
+  height: 6.88%;
+  width: 90.91%;
+  top: 90.56%;
+  right: 7.79%;
+  bottom: 2.56%;
+  left: 1.3%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.perfil {
+  position: absolute;
+  top: 80.43%;
+  left: 25.97%;
+  font-weight: 600;
+}
+.perfil-icone {
+  position: absolute;
+  height: 6.88%;
+  width: 90.91%;
+  top: 73.55%;
+  right: 7.79%;
+  bottom: 19.57%;
+  left: 1.3%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  cursor: pointer;
+}
+.financeiro1 {
+  position: absolute;
+  top: 59.98%;
+  left: 5.19%;
+  font-weight: 600;
+}
+.financeiro1-icone {
+  position: absolute;
+  height: 6.88%;
+  width: 90.91%;
+  top: 53.1%;
+  right: 7.79%;
+  bottom: 40.02%;
+  left: 1.3%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.hospitais-e {
+  margin: 0;
+}
+.hospitais-e-postos-container {
+  position: absolute;
+  top: 38.74%;
+  left: 2.6%;
+  font-weight: 600;
+  font-family: Lato;
+  text-align: center;
+}
+.hospitais-icone {
+  position: absolute;
+  height: 6.88%;
+  width: 90.91%;
+  top: 32.84%;
+  right: 9.09%;
+  bottom: 60.28%;
+  left: 0%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.iniciar {
+  position: absolute;
+  top: 21.53%;
+  left: 22.08%;
+  font-weight: 600;
+}
+.iniciar-icone {
+  position: absolute;
+  height: 6.88%;
+  width: 90.91%;
+  top: 14.65%;
+  right: 7.79%;
+  bottom: 78.47%;
+  left: 1.3%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  cursor: pointer;
+}
+.categoria-icone {
+  position: absolute;
+  height: 7.37%;
+  width: 90.91%;
+  top: 0%;
+  right: 6.49%;
+  bottom: 92.63%;
+  left: 2.6%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.aside {
+  position: absolute;
+  top: 35px;
+  left: 33px;
+  width: 77px;
+  height: 1017px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.75);
+  font-family: Inter;
+}
+.ltimos-resultados {
+  position: absolute;
+  top: 137px;
+  left: 208px;
+  font-size: 32px;
+}
+.result1-child {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #efdba8;
+  width: 384px;
+  height: 89px;
+}
+.result1-item {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  border-radius: 10px;
+  background-color: #a3cfd2;
+  width: 77px;
+  height: 71px;
+}
+.iconlyregularbulkpaper {
+  position: absolute;
+  height: 59.55%;
+  width: 13.8%;
+  top: 20.22%;
+  right: 80.73%;
+  bottom: 20.22%;
+  left: 5.47%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.testesanguineoresultpdf {
+  position: absolute;
+  top: 19px;
+  left: 102px;
+}
+.mb {
+  position: absolute;
+  top: 49px;
+  left: 102px;
+  color: #174d5f;
+}
+.result1 {
+  position: absolute;
+  top: 202px;
+  left: 208px;
+  width: 384px;
+  height: 89px;
+}
+.result2 {
+  position: absolute;
+  top: 202px;
+  left: 619px;
+  width: 384px;
+  height: 89px;
+}
+.result3 {
+  position: absolute;
+  top: 202px;
+  left: 1030px;
+  width: 384px;
+  height: 89px;
+}
+.veja-mais {
+  position: absolute;
+  top: 148px;
+  left: 522px;
+  color: #174d5f;
+}
+.receitas-child {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #efdba8;
+  width: 420px;
+  height: 809px;
+}
+.iconlyregularbulksearch {
+  position: absolute;
+  height: 5.82%;
+  width: 10.48%;
+  top: 6.69%;
+  right: 5.24%;
+  bottom: 87.49%;
+  left: 84.29%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.receitas1 {
+  position: absolute;
+  top: 27px;
+  left: 29px;
+  font-size: 32px;
+}
+.receitas-item {
+  position: absolute;
+  top: 74px;
+  left: 29px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #396771;
+  width: 100px;
+  height: 39px;
+}
+.todas {
+  position: absolute;
+  top: 81px;
+  left: 49px;
+  color: #fff;
+}
+.receitas-inner {
+  position: absolute;
+  top: 74px;
+  left: 142px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #a3cfd2;
+  width: 100px;
+  height: 39px;
+}
+.histrico {
+  position: absolute;
+  top: 81px;
+  left: 146px;
+}
+.frame-child {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #f5f6da;
+  width: 384px;
+  height: 89px;
+}
+.frame-item {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  border-radius: 10px;
+  background-color: #a3cfd2;
+  width: 65px;
+  height: 71px;
+}
+.iconlyregularbulkpaper3 {
+  position: absolute;
+  height: 59.55%;
+  width: 13.8%;
+  top: 20.22%;
+  right: 82.29%;
+  bottom: 20.22%;
+  left: 3.91%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.prescricao-geraldo {
+  position: absolute;
+  top: 15px;
+  left: 85px;
+}
+.pdf-3mb {
+  position: absolute;
+  top: 51px;
+  left: 85px;
+  color: #174d5f;
+  white-space: pre-wrap;
+}
+.iconlyregularbulkshow {
+  position: absolute;
+  height: 62.92%;
+  width: 14.58%;
+  top: 17.98%;
+  right: 3.65%;
+  bottom: 19.1%;
+  left: 81.77%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.rectangle-parent {
+  position: absolute;
+  height: 20.37%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 79.63%;
+  left: 0%;
+}
+.rectangle-group {
+  position: absolute;
+  height: 20.37%;
+  width: 100%;
+  top: 31.35%;
+  right: 0%;
+  bottom: 48.28%;
+  left: 0%;
+}
+.rectangle-container {
+  position: absolute;
+  height: 20.37%;
+  width: 100%;
+  top: 62.7%;
+  right: 0%;
+  bottom: 16.93%;
+  left: 0%;
+}
+.frame-div {
+  position: absolute;
+  height: 20.37%;
+  width: 100%;
+  top: 94.05%;
+  right: 0%;
+  bottom: -14.42%;
+  left: 0%;
+}
+.rectangle-parent1 {
+  position: absolute;
+  height: 20.37%;
+  width: 100%;
+  top: 125.4%;
+  right: 0%;
+  bottom: -45.77%;
+  left: 0%;
+}
+.component-11 {
+  position: absolute;
+  top: 158px;
+  left: 18px;
+  width: 384px;
+  height: 437px;
+}
+.receitas {
+  position: absolute;
+  top: 341px;
+  left: 208px;
+  width: 420px;
+  height: 809px;
+}
+.calendario-child {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #efdba8;
+  width: 417px;
+  height: 433px;
+}
+.maio-2024 {
+  position: absolute;
+  top: 20px;
+  left: 75px;
+  font-size: 30px;
+  white-space: pre-wrap;
+}
+.d-s-t {
+  position: absolute;
+  top: 75px;
+  left: 20px;
+  letter-spacing: 0.8em;
+}
+.div {
+  position: absolute;
+  top: 132px;
+  left: 327px;
+  letter-spacing: 0.8em;
+}
+.div1 {
+  position: absolute;
+  top: 132px;
+  left: 383px;
+  letter-spacing: 0.8em;
+}
+.div2 {
+  position: absolute;
+  top: 195px;
+  left: 20px;
+  letter-spacing: 0.8em;
+}
+.div3 {
+  position: absolute;
+  top: 258px;
+  left: 19px;
+}
+.div4 {
+  position: absolute;
+  top: 321px;
+  left: 19px;
+}
+.div5 {
+  position: absolute;
+  top: 384px;
+  left: 19px;
+}
+.calendario-item {
+  position: absolute;
+  top: 188px;
+  left: 184px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  background-color: #f5f6da;
+  width: 49px;
+  height: 45px;
+}
+.div6 {
+  position: absolute;
+  top: 195px;
+  left: 79px;
+  letter-spacing: 0.8em;
+}
+.div7 {
+  position: absolute;
+  top: 258px;
+  left: 80px;
+}
+.div8 {
+  position: absolute;
+  top: 321px;
+  left: 76px;
+}
+.div9 {
+  position: absolute;
+  top: 384px;
+  left: 78px;
+}
+.div10 {
+  position: absolute;
+  top: 195px;
+  left: 140px;
+  letter-spacing: 0.8em;
+}
+.div11 {
+  position: absolute;
+  top: 258px;
+  left: 137px;
+}
+.div12 {
+  position: absolute;
+  top: 321px;
+  left: 134px;
+  color: #4191ac;
+}
+.div13 {
+  position: absolute;
+  top: 384px;
+  left: 136px;
+}
+.div14 {
+  position: absolute;
+  top: 195px;
+  left: 201px;
+  letter-spacing: 0.8em;
+}
+.div15 {
+  position: absolute;
+  top: 258px;
+  left: 197px;
+}
+.div16 {
+  position: absolute;
+  top: 321px;
+  left: 193px;
+}
+.div17 {
+  position: absolute;
+  top: 384px;
+  left: 196px;
+}
+.div18 {
+  position: absolute;
+  top: 195px;
+  left: 262px;
+  letter-spacing: 0.8em;
+  color: #4191ac;
+}
+.div19 {
+  position: absolute;
+  top: 258px;
+  left: 256px;
+}
+.div20 {
+  position: absolute;
+  top: 321px;
+  left: 255px;
+}
+.div21 {
+  position: absolute;
+  top: 384px;
+  left: 254px;
+}
+.div22 {
+  position: absolute;
+  top: 195px;
+  left: 323px;
+  letter-spacing: 0.8em;
+}
+.div23 {
+  position: absolute;
+  top: 258px;
+  left: 318px;
+}
+.div24 {
+  position: absolute;
+  top: 321px;
+  left: 312px;
+}
+.div25 {
+  position: absolute;
+  top: 384px;
+  left: 313px;
+}
+.div26 {
+  position: absolute;
+  top: 195px;
+  left: 384px;
+  letter-spacing: 0.8em;
+}
+.div27 {
+  position: absolute;
+  top: 258px;
+  left: 378px;
+}
+.div28 {
+  position: absolute;
+  top: 321px;
+  left: 373px;
+}
+.div29 {
+  position: absolute;
+  top: 384px;
+  left: 373px;
+}
+.calendario {
+  position: absolute;
+  top: 341px;
+  left: 1276px;
+  width: 417px;
+  height: 429px;
+  font-size: 24px;
+}
+.unidades-child {
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #f5f6da;
+  width: 503px;
+  height: 215px;
+}
+.unidades-item {
+  position: absolute;
+  top: 295px;
+  left: 22px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #f5f6da;
+  width: 503px;
+  height: 215px;
+}
+.unidade-mista-do {
+  position: absolute;
+  top: 334px;
+  left: 246px;
+  font-size: 24px;
+  display: inline-block;
+  width: 229px;
+}
+.span {
+  color: #000;
+}
+.aberto-24h {
+  position: absolute;
+  top: 409px;
+  left: 246px;
+  color: #174d5f;
+}
+.pronto-atenimento {
+  position: absolute;
+  top: 449px;
+  left: 246px;
+  font-weight: 300;
+}
+.unidades-inner {
+  position: absolute;
+  top: 570px;
+  left: 22px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #f5f6da;
+  width: 503px;
+  height: 215px;
+}
+.image-icon {
+  position: absolute;
+  top: 32px;
+  left: 33px;
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+}
+.image-icon1 {
+  position: absolute;
+  top: 307px;
+  left: 33px;
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+}
+.image-icon2 {
+  position: absolute;
+  top: 582px;
+  left: 33px;
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+}
+.unidade-bsica-de {
+  position: absolute;
+  top: 52px;
+  left: 246px;
+  font-size: 24px;
+  display: inline-block;
+  width: 229px;
+}
+.aberto-fecha-container {
+  position: absolute;
+  top: 127px;
+  left: 246px;
+  color: #174d5f;
+}
+.posto-de-sade {
+  position: absolute;
+  top: 167px;
+  left: 246px;
+  font-weight: 300;
+}
+.hospital-so-domingos {
+  position: absolute;
+  top: 607px;
+  left: 246px;
+  font-size: 24px;
+  display: inline-block;
+  width: 229px;
+}
+.aberto-24h1 {
+  position: absolute;
+  top: 682px;
+  left: 246px;
+  color: #174d5f;
+}
+.hospital-particular {
+  position: absolute;
+  top: 722px;
+  left: 246px;
+  font-weight: 300;
+}
+.unidades {
+  position: absolute;
+  top: 341px;
+  left: 678px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #efdba8;
+  width: 548px;
+  height: 809px;
+  overflow: hidden;
+}
+.hospital-child {
+  position: absolute;
+  top: 454.75px;
+  left: 1275.5px;
+  border-top: 1px solid #174d5f;
+  box-sizing: border-box;
+  width: 418px;
+  height: 1px;
+}
+.image-icon3 {
+  position: absolute;
+  top: 92px;
+  left: 23px;
+  border-radius: 50%;
+  width: 94px;
+  height: 94px;
+  object-fit: cover;
+}
+.image-icon4 {
+  position: absolute;
+  top: 225px;
+  left: 23px;
+  border-radius: 50%;
+  width: 94px;
+  height: 94px;
+  object-fit: cover;
+}
+.dr-osvaldo-neves {
+  position: absolute;
+  top: 101px;
+  left: 128px;
+  font-size: 24px;
+}
+.dra-angela-monteiro {
+  position: absolute;
+  top: 242px;
+  left: 128px;
+  font-size: 24px;
+}
+.endocrinologista {
+  position: absolute;
+  top: 131px;
+  left: 128px;
+  color: #174d5f;
+}
+.fisioterapeuta {
+  position: absolute;
+  top: 272px;
+  left: 128px;
+  color: #174d5f;
+}
+.ativos {
+  position: absolute;
+  top: 28px;
+  left: 291px;
+  font-size: 24px;
+  color: #174d5f;
+}
+.i {
+  position: absolute;
+  top: 156px;
+  left: 128px;
+}
+.i1 {
+  position: absolute;
+  top: 297px;
+  left: 128px;
+}
+.marcados {
+  position: absolute;
+  top: 809px;
+  left: 1276px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #efdba8;
+  width: 417px;
+  height: 352px;
+  overflow: hidden;
+}
+.hospital {
+  width: 100%;
+  position: relative;
+  background-color: #fefae0;
+  height: 1196px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 20px;
+  color: #000;
+  font-family: Merriweather;
+}
+
