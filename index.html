@@ -8,102 +8,223 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <aside class="sidebar">
-        <div class="logo">
-          <h2>VitalData</h2>
-        </div>
-        <nav>
-          <ul>
-            <li>Início</li>
-            <li>Hospitais e Postos</li>
-            <li>Financeiro</li>
-            <li>Perfil</li>
-          </ul>
-        </nav>
-      </aside>
-      
-      <main class="content">
-        <header>
-          <h1>Últimos resultados</h1>
-          <a href="#" class="link">veja mais</a>
-        </header>
-        
-        <section class="files">
-          <div class="file">TesteSanguineoResult.pdf (12MB)</div>
-          <div class="file">RessonanciaMagnetica.pdf (5MB)</div>
-          <div class="file">045829166.pdf (3MB)</div>
-        </section>
-        
-        <section class="receitas">
-          <h2>Receitas</h2>
-          <div class="tabs">
-            <button>Todos</button>
-            <button>Histórico</button>
-          </div>
-          <div class="list">
-            <div class="item">Prescricao_Geraldo.pdf (3MB)</div>
-            <div class="item">Cardiologia_0345.pdf (4MB)</div>
-            <div class="item">Laboratorio_3290.pdf (2MB)</div>
-          </div>
-        </section>
-        
-        <section class="info">
-          <h2>Unidades</h2>
-          <div class="unit">
-            <h3>Unidade Básica de Saúde CINTRA</h3>
-            <p>Aberto • Fecha às 17h</p>
-          </div>
-          <div class="unit">
-            <h3>Unidade Mista do Bequimão</h3>
-            <p>Aberto 24h</p>
-          </div>
-        </section>
-        
-        <section class="calendario">
-          <h2>Maio 2024</h2>
-          <div class="calendar">[CALENDÁRIO AQUI]</div>
-        </section>
-      </main>
-    </div>
-    <script src="script.js"></script>
-  <!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-</body>
+    <div class="hospital">
+      <div class="cadastro">
+      <div class="cadastro-child">
+      </div>
+      <div class="cadastrar">Cadastrar</div>
+      <div class="entrar">Entrar</div>
+      </div>
+      <div class="image-2">
+      </div>
+      <img class="image-10-icon" alt="" src="image 10.png">
+      <div class="aside">
+      <div class="financeiro">Financeiro</div>
+      <img class="financeiro2-icone" alt="" src="financeiro2-icone.svg">
+      <div class="perfil">Perfil</div>
+      <img class="perfil-icone" alt="" src="perfil-icone.svg" id="perfilIcone">
+      <div class="financeiro1">Financeiro</div>
+      <img class="financeiro1-icone" alt="" src="financeiro1-icone.png">
+      <div class="hospitais-e-postos-container">
+      <p class="hospitais-e">Hospitais e</p>
+      <p class="hospitais-e">Postos</p>
+      </div>
+      <img class="hospitais-icone" alt="" src="hospitais-icone.svg">
+      <div class="iniciar">Iniciar</div>
+      <img class="iniciar-icone" alt="" src="iniciar-icone.svg" id="iniciarIcone">
+      <img class="categoria-icone" alt="" src="categoria-icone.png" id="categoriaIconeImage">
+      </div>
+      <div class="ltimos-resultados">Últimos resultados</div>
+      <div class="result1">
+      <div class="result1-child">
+      </div>
+      <div class="result1-item">
+      </div>
+      <img class="iconlyregularbulkpaper" alt="" src="Iconly/Regular/Bulk/Paper.png">
+      <div class="testesanguineoresultpdf">TesteSanguineoResult.pdf</div>
+      <div class="mb">12MB</div>
+      </div>
+      <div class="result2">
+      <div class="result1-child">
+      </div>
+      <div class="result1-item">
+      </div>
+      <img class="iconlyregularbulkpaper" alt="" src="Iconly/Regular/Bulk/Paper.png">
+      <div class="testesanguineoresultpdf">RessonanciaMagnetica.pdf</div>
+      <div class="mb">5MB</div>
+      </div>
+      <div class="result3">
+      <div class="result1-child">
+      </div>
+      <div class="result1-item">
+      </div>
+      <img class="iconlyregularbulkpaper" alt="" src="Iconly/Regular/Bulk/Paper.png">
+      <div class="testesanguineoresultpdf">045829166.pdf</div>
+      <div class="mb">3MB</div>
+      </div>
+      <div class="veja-mais">veja mais</div>
+      <div class="receitas">
+      <div class="receitas-child">
+      </div>
+      <img class="iconlyregularbulksearch" alt="" src="Iconly/Regular/Bulk/Search.svg">
+      <div class="receitas1">Receitas</div>
+      <div class="receitas-item">
+      </div>
+      <div class="todas">Todas</div>
+      <div class="receitas-inner">
+      </div>
+      <div class="histrico">Histórico</div>
+      <div class="component-11">
+      <div class="rectangle-parent">
+      <div class="frame-child">
+      </div>
+      <div class="frame-item">
+      </div>
+      <img class="iconlyregularbulkpaper3" alt="" src="Iconly/Regular/Bulk/Paper.png">
+      <div class="prescricao-geraldo">Prescricao_Geraldo</div>
+      <div class="pdf-3mb">.pdf ⋅ 3MB</div>
+      <img class="iconlyregularbulkshow" alt="" src="Iconly/Regular/Bulk/Show.png">
+      </div>
+      <div class="rectangle-group">
+      <div class="frame-child">
+      </div>
+      <div class="frame-item">
+      </div>
+      <img class="iconlyregularbulkpaper3" alt="" src="Iconly/Regular/Bulk/Paper.png">
+      <div class="prescricao-geraldo">Cardiologia_0345</div>
+      <div class="pdf-3mb">.pdf ⋅ 4MB</div>
+      <img class="iconlyregularbulkshow" alt="" src="Iconly/Regular/Bulk/Show.png">
+      </div>
+      <div class="rectangle-container">
+      <div class="frame-child">
+      </div>
+      <div class="frame-item">
+      </div>
+      <img class="iconlyregularbulkpaper3" alt="" src="Iconly/Regular/Bulk/Paper.png">
+      <div class="prescricao-geraldo">Laboratorio_3290</div>
+      <div class="pdf-3mb">.pdf ⋅ 2MB</div>
+      <img class="iconlyregularbulkshow" alt="" src="Iconly/Regular/Bulk/Show.png">
+      </div>
+      <div class="frame-div">
+      <div class="frame-child">
+      </div>
+      <div class="frame-item">
+      </div>
+      <img class="iconlyregularbulkpaper3" alt="" src="Iconly/Regular/Bulk/Paper.png">
+      <div class="prescricao-geraldo">Fisioterapira_plano</div>
+      <div class="pdf-3mb">.doc ⋅ 6MB</div>
+      <img class="iconlyregularbulkshow" alt="" src="Iconly/Regular/Bulk/Show.png">
+      </div>
+      <div class="rectangle-parent1">
+      <div class="frame-child">
+      </div>
+      <div class="frame-item">
+      </div>
+      <img class="iconlyregularbulkpaper3" alt="" src="Iconly/Regular/Bulk/Paper.png">
+      <div class="prescricao-geraldo">Dermatologia_receita</div>
+      <div class="pdf-3mb">.pdf ⋅ 3MB</div>
+      <img class="iconlyregularbulkshow" alt="" src="Iconly/Regular/Bulk/Show.png">
+      </div>
+      </div>
+      </div>
+      <div class="calendario">
+      <div class="calendario-child">
+      </div>
+      <div class="maio-2024">&lt; Maio 2024 &gt;</div>
+      <div class="d-s-t">D S T Q Q S S</div>
+      <div class="div">1</div>
+      <div class="div1">2</div>
+      <div class="div2">3</div>
+      <div class="div3">10</div>
+      <div class="div4">17</div>
+      <div class="div5">24</div>
+      <div class="calendario-item">
+      </div>
+      <div class="div6">4</div>
+      <div class="div7">11</div>
+      <div class="div8">18</div>
+      <div class="div9">25</div>
+      <div class="div10">5</div>
+      <div class="div11">12</div>
+      <div class="div12">19</div>
+      <div class="div13">26</div>
+      <div class="div14">6</div>
+      <div class="div15">13</div>
+      <div class="div16">20</div>
+      <div class="div17">27</div>
+      <div class="div18">7</div>
+      <div class="div19">14</div>
+      <div class="div20">21</div>
+      <div class="div21">28</div>
+      <div class="div22">8</div>
+      <div class="div23">15</div>
+      <div class="div24">22</div>
+      <div class="div25">29</div>
+      <div class="div26">9</div>
+      <div class="div27">16</div>
+      <div class="div28">23</div>
+      <div class="div29">30</div>
+      </div>
+      <div class="unidades">
+      <div class="unidades-child">
+      </div>
+      <div class="unidades-item">
+      </div>
+      <div class="unidade-mista-do">Unidade Mista do Bequimão</div>
+      <div class="aberto-24h">
+      <span>Aberto</span>
+      <span class="span"> </span>
+      <span>24h</span>
+      <span class="span"> </span>
+      </div>
+      <i class="pronto-atenimento">Pronto Atenimento</i>
+      <div class="unidades-inner">
+      </div>
+      <img class="image-icon" alt="" src="image.png">
+      <img class="image-icon1" alt="" src="image.png">
+      <img class="image-icon2" alt="" src="image.png">
+      <div class="unidade-bsica-de">Unidade Básica de Saúde CINTRA</div>
+      <div class="aberto-fecha-container">
+      <span>Aberto</span>
+      <span class="span"> ⋅ Fecha às 17h </span>
+      </div>
+      <i class="posto-de-sade">Posto de saúde comunitário</i>
+      <div class="hospital-so-domingos">Hospital São Domingos</div>
+      <div class="aberto-24h1">Aberto 24h</div>
+      <i class="hospital-particular">Hospital Particular</i>
+      </div>
+      <div class="hospital-child">
+      </div>
+      <div class="marcados">
+      <div class="receitas1">Marcados</div>
+      <img class="image-icon3" alt="" src="image.png">
+      <img class="image-icon4" alt="" src="image.png">
+      <div class="dr-osvaldo-neves">Dr. Osvaldo Neves</div>
+      <div class="dra-angela-monteiro">Dra. Angela Monteiro </div>
+      <i class="endocrinologista">Endocrinologista</i>
+      <i class="fisioterapeuta">Fisioterapeuta</i>
+      <div class="ativos">Ativos &gt;</div>
+      <i class="i">07/05/2024</i>
+      <i class="i1">19/05/2024</i>
+      </div>
+      </div>
+      <script>
+      var perfilIcone = document.getElementById("perfilIcone");
+      if(perfilIcone) {
+      perfilIcone.addEventListener("click", function (e) {
+      // Add your code here
+      });
+      }
+      var iniciarIcone = document.getElementById("iniciarIcone");
+      if(iniciarIcone) {
+      iniciarIcone.addEventListener("click", function (e) {
+      // Add your code here
+      });
+      }
+      var categoriaIconeImage = document.getElementById("categoriaIconeImage");
+      if(categoriaIconeImage) {
+      categoriaIconeImage.addEventListener("click", function (e) {
+      // Add your code here
+      });
+      }</script>
 </html>
